@@ -13,14 +13,25 @@ const getUsers = async (req, res) => {
     res.status(200).json(response.rows);
 };
 
+const getUserById = async (req, res) => {
+    res.send('User ID ' + req.params.id)
+}
+
+
 const createUser = async (req, res) => {
     const { name, email } = req.body;
     const response = await pool.query('INSERT INTO users (name, email) VALUES ($1, $2)', [name, email]);
     console.log(response);
-    res.send('user created');
+    res.json({
+        message: 'User Added Succesfully',
+        body: {
+            user: { name, email }
+        }
+        })
 };
 
 module.exports = {
     getUsers,
+    getUserById,
     createUser
 }
