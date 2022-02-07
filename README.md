@@ -1,5 +1,5 @@
 # node-postgres-intro
-[EN DESARROLLO] conexión entre nodejs y Postgresql
+Conexión entre nodejs y Postgresql
 
 1. init PSQL with password: password
 
@@ -65,7 +65,21 @@ npm run dev
 
 ![eliminado](https://user-images.githubusercontent.com/68760595/152824393-e11480f0-9a41-4dd1-842d-c5782cb42050.PNG)
 
+12. editUser(), comment -> //deleteUser();
 
+![edicion](https://user-images.githubusercontent.com/68760595/152828179-eaf196cc-8f37-497b-a2f8-48049c3b3875.PNG)
+
+13. In terminal:
+
+`
+npm run dev
+`
+
+![editado](https://user-images.githubusercontent.com/68760595/152828613-58e200e6-60fa-4aa5-a0c4-764a1844ad6e.PNG)
+
+14. in PSQL, select * from users;
+
+![patrick](https://user-images.githubusercontent.com/68760595/152828885-3586d82d-41b4-41cc-8e62-e930b219b795.PNG)
 
 
 
