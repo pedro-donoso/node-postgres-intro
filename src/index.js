@@ -25,19 +25,19 @@ const pool = new Pool(config);
 
 const getBooks = async () => {
     try {
-        const res = await pool.query('select * from users');
+        const res = await pool.query('select * from books');
         console.log(res.rows);
         pool.end();
     } catch(e) {
         console.log(e);
     }
 };
+// getBooks();
 
 const insertUser = async () => {
    try {
         const text = 'INSERT INTO users(username, password) VALUES ($1, $2)'
         const values = ['jhon', 'john1234']
-
         const res = await pool.query(text, values);
         console.log(res);
         pool.end();
@@ -45,25 +45,23 @@ const insertUser = async () => {
        console.log(e);
    }
 }
+   insertUser();
 
 const deleteUser = async () => {
-    const text = 'DELETE FROM users WHERE username = $1';
-    const value = ['john'];
-
-    const res = await pool.query(text, value);
+    const text = 'DELETE FROM users'; 
+    // WHERE username = $1';
+    // const value = ['john'];
+    const res = await pool.query(text);
     console.log(res);
 }
-
 // deleteUser();
 
 const editUser = async () => {
     const text = 'UPDATE users SET username = $1, password= $2 WHERE username = $3';
      const values = ['Bruce', 'bruce123', 'John'];
-
      const res = await pool.query(text, values);
     console.log(res); }
-
- editUser();
+//  editUser();
 
 
 
