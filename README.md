@@ -49,6 +49,24 @@ npm run dev
 
 ![nuevo](https://user-images.githubusercontent.com/68760595/152819063-0c6d04e5-02b3-4d75-afae-42bd90de2a75.PNG)
 
+9. Delete user, comment -> //instertUser();
+
+![borrar](https://user-images.githubusercontent.com/68760595/152823337-963bafaa-0ee2-41f5-a243-62e639dbcc51.PNG)
+
+10. In terminal:
+
+`
+npm run dev
+`
+
+![nodemon](https://user-images.githubusercontent.com/68760595/152824084-dfc1548a-8e52-4a05-a405-64bb986cef06.PNG)
+
+11. in PSQL, select * from users;
+
+![eliminado](https://user-images.githubusercontent.com/68760595/152824393-e11480f0-9a41-4dd1-842d-c5782cb42050.PNG)
+
+
+
 
 
 
