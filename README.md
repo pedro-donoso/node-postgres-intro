@@ -1,6 +1,6 @@
 # Conexión entre nodejs y Postgresql
 
-#### Necesary
+* Necesary
 
 Download or Clone repositorie, in terminal:
 
